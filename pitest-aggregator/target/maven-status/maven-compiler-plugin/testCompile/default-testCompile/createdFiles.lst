@@ -1,0 +1,8 @@
+org/pitest/aggregate/ReportAggregatorBuilderTest.class
+org/pitest/aggregate/TestInvocationHelper$1.class
+org/pitest/aggregate/CodeSourceAggregatorTest.class
+org/pitest/aggregate/TestInvocationHelper.class
+org/pitest/aggregate/MutationResultDataLoaderTest.class
+org/pitest/aggregate/TestInvocationHelper$1$1.class
+org/pitest/aggregate/DataLoaderTest.class
+org/pitest/aggregate/BlockCoverageDataLoaderTest.class

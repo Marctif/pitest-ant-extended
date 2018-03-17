@@ -1,0 +1,7 @@
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/BlockCoverageDataLoader.java
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/CodeSourceAggregator.java
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/DataLoader.java
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/MutationResultDataLoader.java
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/ReportAggregationException.java
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/MutatorUtil.java
+/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/ReportAggregator.java

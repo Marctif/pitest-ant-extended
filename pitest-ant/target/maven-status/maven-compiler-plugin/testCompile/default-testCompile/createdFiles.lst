@@ -1,0 +1,4 @@
+com/example/PartCovered.class
+org/pitest/ant/PitestTaskTest$PathMatcher.class
+com/example/PartCoveredTest.class
+org/pitest/ant/PitestTaskTest.class
