@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutatorTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.144 sec - in org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.321 sec - in org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutatorTest

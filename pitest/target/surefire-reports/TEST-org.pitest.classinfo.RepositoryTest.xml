@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.pitest.classinfo.RepositoryTest" time="0.169" tests="26" errors="0" skipped="0" failures="0">
+<testsuite name="org.pitest.classinfo.RepositoryTest" time="0.336" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.141-b15"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/ant-pitest-example"/>
+    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/ant-pitest-example/pitest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/mnt/c/ant-pitest-example"/>
+    <property name="user.dir" value="/mnt/c/ant-pitest-example/pitest"/>
     <property name="java.runtime.version" value="1.8.0_141-8u141-b15-3~14.04-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -60,30 +60,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldOnlyLookForKnownClassOnce" classname="org.pitest.classinfo.RepositoryTest" time="0.028"/>
-  <testcase name="shouldReturnFalseWhenAskedForUnknownClass" classname="org.pitest.classinfo.RepositoryTest" time="0.002"/>
-  <testcase name="doesNotTreatInterfacesAsPartOfClassHierachy" classname="org.pitest.classinfo.RepositoryTest" time="0.012"/>
-  <testcase name="shouldReportOuterClassForNonStaticInnerClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.019"/>
-  <testcase name="shouldRecordSourceFile" classname="org.pitest.classinfo.RepositoryTest" time="0.003"/>
+  <testcase name="shouldOnlyLookForKnownClassOnce" classname="org.pitest.classinfo.RepositoryTest" time="0.044"/>
+  <testcase name="shouldReturnFalseWhenAskedForUnknownClass" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
+  <testcase name="doesNotTreatInterfacesAsPartOfClassHierachy" classname="org.pitest.classinfo.RepositoryTest" time="0.056"/>
+  <testcase name="shouldReportOuterClassForNonStaticInnerClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.013"/>
+  <testcase name="shouldRecordSourceFile" classname="org.pitest.classinfo.RepositoryTest" time="0.015"/>
   <testcase name="shouldReportCodeLines" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
   <testcase name="shouldOnlyCheckSourceForUnknownClassesOnce" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
-  <testcase name="shouldReportInnermstOuterClassForNestedInnerClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.039"/>
-  <testcase name="shouldReportOuterClassForStaticInnerClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.005"/>
+  <testcase name="shouldReportInnermstOuterClassForNestedInnerClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.083"/>
+  <testcase name="shouldReportOuterClassForStaticInnerClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.023"/>
   <testcase name="shouldOnlyLookForUnknownClassesOnce" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
-  <testcase name="shouldDetectConcreteClassesAsNotInterfaces" classname="org.pitest.classinfo.RepositoryTest" time="0.008"/>
-  <testcase name="shouldReturnNoneWhenAskedForUnknownClass" classname="org.pitest.classinfo.RepositoryTest" time="0.002"/>
+  <testcase name="shouldDetectConcreteClassesAsNotInterfaces" classname="org.pitest.classinfo.RepositoryTest" time="0.001"/>
+  <testcase name="shouldReturnNoneWhenAskedForUnknownClass" classname="org.pitest.classinfo.RepositoryTest" time="0.008"/>
   <testcase name="shouldReportNoSuperClassForObject" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
-  <testcase name="shouldReportOuterClassForLocalClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.024"/>
+  <testcase name="shouldReportOuterClassForLocalClasses" classname="org.pitest.classinfo.RepositoryTest" time="0.014"/>
   <testcase name="shouldDetectInterfacesAsAbstract" classname="org.pitest.classinfo.RepositoryTest" time="0.001"/>
-  <testcase name="shouldReturnTrueWhenAskedForKnownClass" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
+  <testcase name="shouldReturnTrueWhenAskedForKnownClass" classname="org.pitest.classinfo.RepositoryTest" time="0.002"/>
   <testcase name="shouldDetectInterfacesAsInterfaces" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
-  <testcase name="shouldCorrectlyNegotiateClassHierachies" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
-  <testcase name="shouldReportSuperClass" classname="org.pitest.classinfo.RepositoryTest" time="0.005"/>
-  <testcase name="shouldRecordClassLevelAnnotations" classname="org.pitest.classinfo.RepositoryTest" time="0.001"/>
-  <testcase name="shouldRecordMethodLevelAnnotations" classname="org.pitest.classinfo.RepositoryTest" time="0.003"/>
+  <testcase name="shouldCorrectlyNegotiateClassHierachies" classname="org.pitest.classinfo.RepositoryTest" time="0.006"/>
+  <testcase name="shouldReportSuperClass" classname="org.pitest.classinfo.RepositoryTest" time="0.025"/>
+  <testcase name="shouldRecordClassLevelAnnotations" classname="org.pitest.classinfo.RepositoryTest" time="0.014"/>
+  <testcase name="shouldRecordMethodLevelAnnotations" classname="org.pitest.classinfo.RepositoryTest" time="0.013"/>
   <testcase name="shouldCalculateHashForSuppledClass" classname="org.pitest.classinfo.RepositoryTest" time="0.006"/>
-  <testcase name="shouldReturnInfoForClassOnClassPath" classname="org.pitest.classinfo.RepositoryTest" time="0.004"/>
-  <testcase name="shouldDetectConcreteClassesAsNotAbstract" classname="org.pitest.classinfo.RepositoryTest" time="0.005"/>
-  <testcase name="shouldOnlyQuerySourceForAnUnknownClassOnce" classname="org.pitest.classinfo.RepositoryTest" time="0.002"/>
-  <testcase name="shouldReportSuperClassAsObjectWhenNoneDeclared" classname="org.pitest.classinfo.RepositoryTest" time="0"/>
+  <testcase name="shouldReturnInfoForClassOnClassPath" classname="org.pitest.classinfo.RepositoryTest" time="0.001"/>
+  <testcase name="shouldDetectConcreteClassesAsNotAbstract" classname="org.pitest.classinfo.RepositoryTest" time="0.007"/>
+  <testcase name="shouldOnlyQuerySourceForAnUnknownClassOnce" classname="org.pitest.classinfo.RepositoryTest" time="0.003"/>
+  <testcase name="shouldReportSuperClassAsObjectWhenNoneDeclared" classname="org.pitest.classinfo.RepositoryTest" time="0.001"/>
 </testsuite>

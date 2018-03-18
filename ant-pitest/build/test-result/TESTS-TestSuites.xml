@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="DESKTOP-6CK8SSF" id="0" name="ExecutedByTestsButNotActuallyTestedByThemTest" package="com.example" skipped="0" tests="1" time="0.136" timestamp="2018-03-17T17:09:49">
+  <testsuite errors="0" failures="0" hostname="DESKTOP-6CK8SSF" id="0" name="ExecutedByTestsButNotActuallyTestedByThemTest" package="com.example" skipped="0" tests="1" time="0.123" timestamp="2018-03-18T02:45:15">
       <properties>
           <property name="ant.project.invoked-targets" value="pit" />
 
@@ -139,7 +139,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="DESKTOP-6CK8SSF" id="1" name="PartiallyTestedTest" package="com.example" skipped="0" tests="1" time="0.01" timestamp="2018-03-17T17:09:49">
+  <testsuite errors="0" failures="0" hostname="DESKTOP-6CK8SSF" id="1" name="PartiallyTestedTest" package="com.example" skipped="0" tests="1" time="0.012" timestamp="2018-03-18T02:45:15">
       <properties>
           <property name="ant.project.invoked-targets" value="pit" />
 
@@ -271,7 +271,7 @@
 
       </properties>
 
-      <testcase classname="com.example.PartiallyTestedTest" name="testSomeStuff" time="0.004" />
+      <testcase classname="com.example.PartiallyTestedTest" name="testSomeStuff" time="0.006" />
 
       <system-out />
 

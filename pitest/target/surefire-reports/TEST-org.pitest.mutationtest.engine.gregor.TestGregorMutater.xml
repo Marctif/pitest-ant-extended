@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="2.209" tests="19" errors="0" skipped="0" failures="0">
+<testsuite name="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="3.282" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.141-b15"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/ant-pitest-example"/>
+    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/ant-pitest-example/pitest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/mnt/c/ant-pitest-example"/>
+    <property name="user.dir" value="/mnt/c/ant-pitest-example/pitest"/>
     <property name="java.runtime.version" value="1.8.0_141-8u141-b15-3~14.04-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -60,23 +60,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldNotMutateGroovyClosures" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0"/>
-  <testcase name="shouldNotMutateCompilerGeneratedConditionalsInStringSwitch" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0"/>
-  <testcase name="shouldMutateOtherStatementsWhenAssertIsPresent" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.143"/>
-  <testcase name="shouldFindMutationsFromAllSuppliedMutators" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.12"/>
-  <testcase name="shouldMarkMutationsWithinFinallyBlocks" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.155"/>
-  <testcase name="shouldScopeMutationIndexesByInstructionCounter" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.148"/>
-  <testcase name="shouldRecordMutationsAsInSameBlockWhenForAStraightThroughMethod" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.189"/>
-  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInDifferentBranchesOfSwitchStatement" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.17"/>
-  <testcase name="shouldNotMutateGroovyClasses" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.021"/>
-  <testcase name="shouldNotRecordMutationsAsInFinallyBlockWhenTheyAreNot" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.128"/>
-  <testcase name="shouldFindNoMutationsWhenNoMutationOperatorsSupplied" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.156"/>
-  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInDifferentBranchesOfIfStatement" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.125"/>
-  <testcase name="shouldRecordMutationsAsInSameBlockWhenSwitchStatementFallsThrough" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.124"/>
-  <testcase name="shouldMutateCustomConstructorsAddedToEnums" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.125"/>
-  <testcase name="shouldMarkMutationsWithinFinallyBlocksWhenExceptionHandlerAlsoPresent" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.124"/>
-  <testcase name="shouldNotMutateCodeGeneratedByCompilerToImplementEnums" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.119"/>
-  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInExceptionHandler" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.12"/>
-  <testcase name="shouldNotMutateAssertStatments" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.121"/>
-  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInDifferentMethods" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.121"/>
+  <testcase name="shouldNotMutateGroovyClosures" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.022"/>
+  <testcase name="shouldNotMutateCompilerGeneratedConditionalsInStringSwitch" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.015"/>
+  <testcase name="shouldMutateOtherStatementsWhenAssertIsPresent" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.139"/>
+  <testcase name="shouldFindMutationsFromAllSuppliedMutators" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.208"/>
+  <testcase name="shouldMarkMutationsWithinFinallyBlocks" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.345"/>
+  <testcase name="shouldScopeMutationIndexesByInstructionCounter" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.3"/>
+  <testcase name="shouldRecordMutationsAsInSameBlockWhenForAStraightThroughMethod" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.215"/>
+  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInDifferentBranchesOfSwitchStatement" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.232"/>
+  <testcase name="shouldNotMutateGroovyClasses" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.015"/>
+  <testcase name="shouldNotRecordMutationsAsInFinallyBlockWhenTheyAreNot" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.132"/>
+  <testcase name="shouldFindNoMutationsWhenNoMutationOperatorsSupplied" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.234"/>
+  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInDifferentBranchesOfIfStatement" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.133"/>
+  <testcase name="shouldRecordMutationsAsInSameBlockWhenSwitchStatementFallsThrough" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.211"/>
+  <testcase name="shouldMutateCustomConstructorsAddedToEnums" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.231"/>
+  <testcase name="shouldMarkMutationsWithinFinallyBlocksWhenExceptionHandlerAlsoPresent" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.213"/>
+  <testcase name="shouldNotMutateCodeGeneratedByCompilerToImplementEnums" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.188"/>
+  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInExceptionHandler" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.14"/>
+  <testcase name="shouldNotMutateAssertStatments" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.183"/>
+  <testcase name="shouldRecordMutationsAsInDifferentBlocksWhenInDifferentMethods" classname="org.pitest.mutationtest.engine.gregor.TestGregorMutater" time="0.126"/>
 </testsuite>

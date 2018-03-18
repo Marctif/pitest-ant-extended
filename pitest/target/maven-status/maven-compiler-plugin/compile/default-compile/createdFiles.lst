@@ -373,6 +373,7 @@ org/pitest/sequence/Match$6.class
 org/pitest/mutationtest/engine/gregor/analysis/InstructionCounter.class
 org/pitest/mutationtest/engine/gregor/mutators/ReturnValsMethodVisitor.class
 org/pitest/coverage/BlockCoverage.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitor.class
 org/pitest/mutationtest/engine/gregor/GregorMutationEngine.class
 org/pitest/mutationtest/engine/gregor/LineTrackingMethodVisitor.class
 org/pitest/plugin/FeatureSelector$3.class
@@ -383,6 +384,7 @@ org/pitest/coverage/analysis/CoverageAnalyser.class
 org/pitest/util/PitError.class
 org/pitest/mutationtest/engine/gregor/config/Mutator$1.class
 org/pitest/classinfo/ClassInfoSource.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalOperatorReplacementMutator.class
 org/pitest/classinfo/ClassInfoVisitor.class
 org/pitest/classinfo/ClassName$1.class
 org/pitest/classinfo/MethodFilteringAdapter.class

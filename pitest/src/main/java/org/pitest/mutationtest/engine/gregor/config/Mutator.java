@@ -54,6 +54,8 @@ import org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncreme
 import org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveSwitchMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.experimental.SwitchMutator;
 
+import org.pitest.mutationtest.engine.gregor.mutators.RelationalOperatorReplacementMutator;
+
 public final class Mutator {
 
   private static final Map<String, Iterable<MethodMutatorFactory>> MUTATORS = new LinkedHashMap<>();
@@ -123,6 +125,15 @@ public final class Mutator {
      * Optional mutator that replaces constructor calls with null values.
      */
     add("CONSTRUCTOR_CALLS", ConstructorCallMutator.CONSTRUCTOR_CALL_MUTATOR);
+
+
+
+    /**
+     * CUSTOM OPERATOR
+     */
+    add("RELATION_REPLACE",
+            RelationalOperatorReplacementMutator.REPLACE_RELATIONAL_MUTATOR);
+
 
     /**
      * Removes conditional statements so that guarded statements always execute

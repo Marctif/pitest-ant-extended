@@ -320,6 +320,8 @@
 </file>
 <file name="/mnt/c/ant-pitest-example/pitest/src/main/java/org/pitest/mutationtest/engine/gregor/mutators/PrimitiveReturnsMutator.java">
 </file>
+<file name="/mnt/c/ant-pitest-example/pitest/src/main/java/org/pitest/mutationtest/engine/gregor/mutators/RelationalOperatorReplacementMutator.java">
+</file>
 <file name="/mnt/c/ant-pitest-example/pitest/src/main/java/org/pitest/mutationtest/engine/gregor/mutators/RemoveConditionalMutator.java">
 </file>
 <file name="/mnt/c/ant-pitest-example/pitest/src/main/java/org/pitest/mutationtest/engine/gregor/mutators/ReturnValsMutator.java">

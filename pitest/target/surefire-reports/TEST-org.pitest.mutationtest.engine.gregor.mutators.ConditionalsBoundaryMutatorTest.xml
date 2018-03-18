@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="5.204" tests="9" errors="0" skipped="0" failures="0">
+<testsuite name="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="6.851" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.141-b15"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/ant-pitest-example"/>
+    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/ant-pitest-example/pitest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/mnt/c/ant-pitest-example"/>
+    <property name="user.dir" value="/mnt/c/ant-pitest-example/pitest"/>
     <property name="java.runtime.version" value="1.8.0_141-8u141-b15-3~14.04-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -60,13 +60,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldReplaceIFGTwithIFGE" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.467"/>
-  <testcase name="shouldReplaceIF_ICMPLTwithIF_ICMPGT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.76"/>
-  <testcase name="shouldReplaceIF_ICMPGEwithIF_ICMPGT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.763"/>
-  <testcase name="shouldReplaceIFGEwithIFGT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.504"/>
-  <testcase name="shouldReplaceIF_ICMPGTwithIF_ICMPGE" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.782"/>
-  <testcase name="shouldReplaceICMPLEwithIF_ICMPLT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.764"/>
-  <testcase name="shouldProvideAMeaningfulName" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.003"/>
-  <testcase name="shouldReplaceIFLEwithILT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.499"/>
-  <testcase name="shouldReplaceIFLTwithIFLE" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.662"/>
+  <testcase name="shouldReplaceIFGTwithIFGE" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.492"/>
+  <testcase name="shouldReplaceIF_ICMPLTwithIF_ICMPGT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.806"/>
+  <testcase name="shouldReplaceIF_ICMPGEwithIF_ICMPGT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.9"/>
+  <testcase name="shouldReplaceIFGEwithIFGT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="1.031"/>
+  <testcase name="shouldReplaceIF_ICMPGTwithIF_ICMPGE" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="1.186"/>
+  <testcase name="shouldReplaceICMPLEwithIF_ICMPLT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.87"/>
+  <testcase name="shouldProvideAMeaningfulName" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.002"/>
+  <testcase name="shouldReplaceIFLEwithILT" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.881"/>
+  <testcase name="shouldReplaceIFLTwithIFLE" classname="org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutatorTest" time="0.683"/>
 </testsuite>
