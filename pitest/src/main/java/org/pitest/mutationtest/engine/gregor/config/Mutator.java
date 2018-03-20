@@ -55,6 +55,8 @@ import org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveSwitchM
 import org.pitest.mutationtest.engine.gregor.mutators.experimental.SwitchMutator;
 
 import org.pitest.mutationtest.engine.gregor.mutators.RelationalOperatorReplacementMutator;
+import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorReplacement;
+import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorDeletion;
 
 public final class Mutator {
 
@@ -133,6 +135,14 @@ public final class Mutator {
      */
     add("RELATION_REPLACE",
             RelationalOperatorReplacementMutator.REPLACE_RELATIONAL_MUTATOR);
+
+    add("ARITHMETIC_REPLACE",
+            ArithmeticOperatorReplacement.REPLACE_ARITHMETIC_MUTATOR);
+
+    add("ARITHMETIC_DELETE",
+            ArithmeticOperatorDeletion.DELETE_ARITHMETIC_MUTATOR);
+
+
 
 
     /**

@@ -106,7 +106,7 @@
 			<path refid="pitest.path"/>
 			<path refid="test.path"/>
 		</path>
-		<pitest pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="com.example.*" targetClasses="com.example.*" reportDir="pitReports" sourceDir="src" mutators="RELATION_REPLACE"/>
+		<pitest pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="com.example.*" targetClasses="com.example.*" reportDir="pitReports" sourceDir="src" mutators="ARITHMETIC_REPLACE"/>
 	</target>
 
 </project>
