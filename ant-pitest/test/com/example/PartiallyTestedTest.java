@@ -18,7 +18,8 @@ public class PartiallyTestedTest {
     };
     
     PartiallyTested testee = new PartiallyTested(sideEffect);
-    assertEquals(200,testee.doLotsOfThings(100));
+    assertEquals(2,testee.doLotsOfThings(100));
+    assertEquals(2,testee.getAddAORCheck());
   }
 
 }

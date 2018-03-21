@@ -2,6 +2,7 @@ org/pitest/functional/predicate/Not.class
 org/pitest/mutationtest/engine/gregor/mutators/RemoveConditionalMutator$Choice.class
 org/pitest/classinfo/TestToClassMapper.class
 org/pitest/junit/adapter/AdaptedJUnitTestUnit.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorDMUL.class
 org/pitest/mutationtest/mocksupport/JavassistInterceptor.class
 org/pitest/junit/CompoundTestUnitFinder.class
 org/pitest/functional/FunctionalCollection.class
@@ -17,6 +18,8 @@ org/pitest/sequence/Match$4.class
 org/pitest/functional/prelude/Prelude$8.class
 org/pitest/mutationtest/UnviableClassMutator.class
 org/pitest/util/IsolationUtils.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorDREM.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorIMUL.class
 org/pitest/junit/JUnitCustomRunnerTestUnitFinder.class
 org/pitest/classinfo/ClassInfo$1.class
 org/pitest/coverage/execute/DependencyFilter.class
@@ -60,6 +63,7 @@ org/pitest/mutationtest/engine/gregor/mutators/IncrementsMethodVisitor.class
 org/pitest/junit/adapter/AdaptingRunListener.class
 org/pitest/mutationtest/engine/gregor/mutators/ConditionalMethodVisitor.class
 org/pitest/mutationtest/EngineArguments.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorLSUB.class
 org/pitest/coverage/LineMap.class
 org/pitest/coverage/analysis/LineMapper.class
 org/pitest/coverage/execute/CoverageDecorator.class
@@ -69,6 +73,7 @@ org/pitest/bytecode/NullVisitor$NullAnnotationVisitor.class
 org/pitest/classpath/ClassPath$3.class
 org/pitest/coverage/BlockLocation.class
 org/pitest/mutationtest/engine/gregor/mutators/experimental/MemberVariableMutator.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorIREM.class
 org/pitest/testapi/TestListener.class
 org/pitest/mutationtest/engine/gregor/mutators/ConditionalsBoundaryMethodVisitor.class
 org/pitest/mutationtest/engine/gregor/mutators/InlineConstantMutator.class
@@ -83,6 +88,7 @@ org/pitest/mutationtest/engine/gregor/config/GregorEngineFactory.class
 org/pitest/mutationtest/engine/gregor/mutators/PrimitivesReturnValsMethodVisitor$1.class
 org/pitest/junit/RunnerSuiteFinder.class
 org/pitest/mutationtest/engine/gregor/mutators/AReturnMethodVisitor$6.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorFDIV.class
 org/pitest/junit/RunnerSuiteFinder$2.class
 org/pitest/mutationtest/engine/gregor/mutators/InvertNegsMutator.class
 org/pitest/functional/FunctionalList.class
@@ -90,6 +96,7 @@ org/pitest/mutationtest/engine/gregor/analysis/DefaultInstructionCounter.class
 org/pitest/bytecode/NullVisitor$1.class
 org/pitest/mutationtest/engine/gregor/blocks/BlockCounter.class
 org/pitest/functional/F6.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorIADD.class
 org/pitest/sequence/State.class
 org/pitest/mutationtest/engine/gregor/mutators/AReturnMethodVisitor$5.class
 org/pitest/classinfo/ClassInfo$3.class
@@ -120,6 +127,7 @@ org/pitest/junit/adapter/CustomRunnerExecutor.class
 org/pitest/mutationtest/engine/gregor/mutators/experimental/RemoveSwitchMutator.class
 org/pitest/testapi/TestGroupConfig.class
 org/pitest/mutationtest/engine/gregor/config/Mutator.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorISUB.class
 org/pitest/classpath/ClassPath.class
 org/pitest/testapi/execute/MultipleTestGroup.class
 org/pitest/coverage/CoverageClassVisitor.class
@@ -129,15 +137,19 @@ org/pitest/testng/TestNGConfiguration.class
 org/pitest/sequence/SequenceMatcher.class
 org/pitest/mutationtest/engine/gregor/mutators/PrimitivesReturnValsMethodVisitor$2.class
 org/pitest/mutationtest/engine/Mutant.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorFADD.class
 org/pitest/dependency/DependencyExtractor$5.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticOperatorReplacement$TYPE.class
 org/pitest/mutationtest/engine/gregor/mutators/ArgumentPropagationVisitor.class
 org/pitest/mutationtest/engine/gregor/mutators/BooleanFalseMethodVisitor$2.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitorNE.class
 org/pitest/testapi/TestUnit.class
 org/pitest/junit/JUnitCustomRunnerTestUnitFinder$2.class
 org/pitest/mutationtest/engine/gregor/mutators/IncrementsMutator.class
 org/pitest/mutationtest/execute/DefaultPITClassloader.class
 org/pitest/testapi/execute/ResultType$7.class
 org/pitest/mutationtest/engine/gregor/ClassContext$1.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitorGT.class
 org/pitest/mutationtest/engine/gregor/GregorMutater$5.class
 org/pitest/mutationtest/engine/gregor/AbstractInsnMutator.class
 sun/pitest/InvokeReceiver.class
@@ -172,6 +184,7 @@ org/pitest/classinfo/DeferredClassPointer.class
 org/pitest/mutationtest/engine/MutationEngine.class
 org/pitest/coverage/TestInfo.class
 org/pitest/mutationtest/engine/gregor/config/GregorEngineFactory$1.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorFSUB.class
 org/pitest/mutationtest/engine/gregor/ZeroOperandMutation.class
 org/pitest/util/Glob$1.class
 org/pitest/mutationtest/MutationEngineFactory.class
@@ -189,6 +202,7 @@ org/pitest/coverage/execute/ErrorListener.class
 org/pitest/testapi/execute/ResultType$6.class
 org/pitest/functional/prelude/Prelude$4.class
 org/pitest/classpath/ArchiveClassPathRoot.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitorLT.class
 org/pitest/sequence/Context.class
 org/pitest/functional/prelude/Prelude$2.class
 org/pitest/mutationtest/mocksupport/JavassistInputStreamInterceptorAdapater.class
@@ -243,12 +257,15 @@ org/pitest/testapi/execute/Pitest.class
 org/pitest/junit/RunnerSuiteFinder$1.class
 org/pitest/mutationtest/engine/gregor/mutators/InlineConstantMutator$InlineConstantVisitor.class
 org/pitest/mutationtest/engine/gregor/mutators/NonVoidMethodCallMutator$1.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorLADD.class
 org/pitest/coverage/execute/CoverageMinion$1.class
 org/pitest/functional/predicate/And.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitorEQ.class
 org/pitest/sequence/Match$5.class
 org/pitest/testapi/execute/Container.class
 org/pitest/sequence/SequenceQuery$Or.class
 org/pitest/mutationtest/DetectionStatus.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorLDIV.class
 org/pitest/mutationtest/engine/gregor/mutators/NullMutateEverything.class
 org/pitest/functional/F2.class
 org/pitest/junit/JUnitCompatibleConfiguration.class
@@ -258,6 +275,7 @@ org/pitest/functional/SideEffect.class
 org/pitest/util/StreamUtil.class
 org/pitest/junit/JUnitCustomRunnerTestUnitFinder$1.class
 org/pitest/mutationtest/engine/gregor/mutators/AReturnMethodVisitor$2.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorFREM.class
 org/pitest/dependency/DependencyExtractor.class
 org/pitest/help/Help.class
 org/pitest/sequence/EndMatch.class
@@ -275,6 +293,7 @@ org/pitest/mutationtest/engine/gregor/mutators/VoidMethodCallMutator.class
 org/pitest/functional/prelude/Prelude$7.class
 org/pitest/mutationtest/mocksupport/JavassistInputStreamInterceptorAdapater$1.class
 org/pitest/mutationtest/engine/gregor/mutators/RemoveConditionalMutator.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalOperatorReplacementMutator$TYPE.class
 org/pitest/mutationtest/engine/gregor/mutators/PrimitivesReturnValsMethodVisitor$3.class
 org/pitest/plugin/FeatureParser$1.class
 org/pitest/testapi/TestUnitFinder.class
@@ -289,6 +308,7 @@ org/pitest/functional/FunctionalIterable.class
 org/pitest/util/ServiceLoader.class
 org/pitest/coverage/CoverageReceiver.class
 org/pitest/mutationtest/engine/gregor/mutators/AReturnMethodVisitor$7.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticOperatorReplacement.class
 org/pitest/util/Functions$3.class
 org/pitest/coverage/execute/JavassistCoverageInterceptor.class
 org/pitest/testapi/execute/FindTestUnits.class
@@ -314,10 +334,12 @@ org/pitest/junit/RunnerSuiteFinder$3.class
 org/pitest/mutationtest/engine/gregor/AvoidAssertsMethodAdapter.class
 org/pitest/mutationtest/engine/gregor/mutators/BooleanFalseReturnValsMutator.class
 org/pitest/classinfo/BridgeMethodFilter.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorLREM.class
 org/pitest/testapi/TestPluginFactory.class
 org/pitest/classinfo/InfoMethodVisitor.class
 org/pitest/classinfo/ClassName$2.class
 org/pitest/coverage/execute/CoverageWorker.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorDDIV.class
 org/pitest/plugin/Feature.class
 org/pitest/testng/TestNGTestUnitFinder.class
 org/pitest/util/Functions$4.class
@@ -330,6 +352,7 @@ org/pitest/plugin/ProvidesFeature.class
 org/pitest/mutationtest/engine/gregor/ClassInfo.class
 org/pitest/mutationtest/execute/HotSwap.class
 org/pitest/coverage/TestInfoNameComparator.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorDSUB.class
 org/pitest/dependency/DependencyClassVisitor$DependencyAnalysisMethodVisitor.class
 org/pitest/classinfo/ClassByteArraySource.class
 org/pitest/functional/prelude/Prelude.class
@@ -341,6 +364,7 @@ org/pitest/mutationtest/engine/gregor/mutators/ConstructorCallMutator$1.class
 org/pitest/plugin/FeatureSelector$2.class
 org/pitest/classinfo/ClassName.class
 org/pitest/mutationtest/engine/gregor/config/Mutator$2.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitorLE.class
 org/pitest/sequence/Split.class
 org/pitest/sequence/Match$1.class
 org/pitest/junit/ParameterisedTestFilter.class
@@ -351,6 +375,7 @@ org/pitest/testapi/AbstractTestUnit.class
 org/pitest/mutationtest/engine/gregor/mutators/BooleanTrueMethodVisitor$2.class
 org/pitest/mutationtest/execute/DefaultReporter.class
 org/pitest/mutationtest/engine/gregor/mutators/NullReturnMethodVisitor.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorIDIV.class
 org/pitest/mutationtest/engine/gregor/mutators/experimental/ReturnValuesMutator.class
 org/pitest/mutationtest/execute/Reporter.class
 org/pitest/util/SafeDataInputStream.class
@@ -368,12 +393,12 @@ org/pitest/junit/ParameterisedJUnitTestFinder.class
 org/pitest/coverage/analysis/Block.class
 org/pitest/plugin/ToggleStatus.class
 org/pitest/reflection/Reflection.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorLMUL.class
 org/pitest/mutationtest/engine/Location.class
 org/pitest/sequence/Match$6.class
 org/pitest/mutationtest/engine/gregor/analysis/InstructionCounter.class
 org/pitest/mutationtest/engine/gregor/mutators/ReturnValsMethodVisitor.class
 org/pitest/coverage/BlockCoverage.class
-org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitor.class
 org/pitest/mutationtest/engine/gregor/GregorMutationEngine.class
 org/pitest/mutationtest/engine/gregor/LineTrackingMethodVisitor.class
 org/pitest/plugin/FeatureSelector$3.class
@@ -390,6 +415,7 @@ org/pitest/classinfo/ClassName$1.class
 org/pitest/classinfo/MethodFilteringAdapter.class
 org/pitest/mutationtest/mocksupport/JavassistInputStreamInterceptorMethodVisitor.class
 org/pitest/mutationtest/engine/gregor/mutators/AReturnMethodVisitor.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticOperatorDeletionFirst.class
 org/pitest/classinfo/ClassIdentifier.class
 org/pitest/classinfo/ComputeClassWriter.class
 org/pitest/functional/FArray.class
@@ -399,6 +425,7 @@ org/pitest/classpath/ClassFilter.class
 org/pitest/mutationtest/config/ClientPluginServices.class
 org/pitest/mutationtest/engine/gregor/MutationContext.class
 sun/pitest/CodeCoverageStore.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticDeleteFirstMethodVisitor.class
 org/pitest/functional/prelude/Prelude$11.class
 org/pitest/extension/common/NoTestSuiteFinder.class
 org/pitest/classinfo/HashFunction.class
@@ -417,6 +444,7 @@ org/pitest/sequence/Match.class
 org/pitest/plugin/ToolClasspathPlugin.class
 org/pitest/mutationtest/engine/gregor/mutators/VoidMethodCallMutator$1.class
 org/pitest/mutationtest/engine/gregor/MutationEngineConfiguration.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorFMUL.class
 org/pitest/sequence/SlotRead.class
 org/pitest/testapi/execute/ResultType$ResultToListenerSideEffect.class
 org/pitest/mutationtest/engine/gregor/mutators/NullReturnValsMutator.class
@@ -424,3 +452,5 @@ org/pitest/classinfo/ClassInfo.class
 org/pitest/mutationtest/execute/CommandLineMessage.class
 org/pitest/testapi/execute/Pitest$1.class
 org/pitest/mutationtest/config/TestPluginArguments.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorDADD.class
+org/pitest/mutationtest/engine/gregor/mutators/RelationalMethodVisitorGE.class

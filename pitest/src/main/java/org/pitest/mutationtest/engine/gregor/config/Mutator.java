@@ -56,7 +56,7 @@ import org.pitest.mutationtest.engine.gregor.mutators.experimental.SwitchMutator
 
 import org.pitest.mutationtest.engine.gregor.mutators.RelationalOperatorReplacementMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorReplacement;
-import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorDeletion;
+import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorDeletionFirst;
 
 public final class Mutator {
 
@@ -131,16 +131,51 @@ public final class Mutator {
 
 
     /**
-     * CUSTOM OPERATOR
+     * CUSTOM ROR
      */
-    add("RELATION_REPLACE",
-            RelationalOperatorReplacementMutator.REPLACE_RELATIONAL_MUTATOR);
+    add("RELATION_REPLACE_EQ", new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.EQ));
+    add("RELATION_REPLACE_NE", new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.NE));
+    add("RELATION_REPLACE_GE", new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.GE));
+    add("RELATION_REPLACE_LE", new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.LE));
+    add("RELATION_REPLACE_GT", new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.GT));
+    add("RELATION_REPLACE_LT", new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.LT));
 
-    add("ARITHMETIC_REPLACE",
-            ArithmeticOperatorReplacement.REPLACE_ARITHMETIC_MUTATOR);
+    addGroup("ROR", ror());
 
-    add("ARITHMETIC_DELETE",
-            ArithmeticOperatorDeletion.DELETE_ARITHMETIC_MUTATOR);
+    /**
+     * CUSTOM AOR
+     */
+    add("ARITHMETIC_REPLACE_IADD", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IADD));
+    add("ARITHMETIC_REPLACE_ISUB", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.ISUB));
+    add("ARITHMETIC_REPLACE_IMUL", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IMUL));
+    add("ARITHMETIC_REPLACE_IDIV", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IDIV));
+    add("ARITHMETIC_REPLACE_IREM", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IREM));
+
+    add("ARITHMETIC_REPLACE_DADD", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DADD));
+    add("ARITHMETIC_REPLACE_DSUB", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DSUB));
+    add("ARITHMETIC_REPLACE_DMUL", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DMUL));
+    add("ARITHMETIC_REPLACE_DDIV", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DDIV));
+    add("ARITHMETIC_REPLACE_DREM", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DREM));
+
+    add("ARITHMETIC_REPLACE_FADD", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FADD));
+    add("ARITHMETIC_REPLACE_FSUB", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FSUB));
+    add("ARITHMETIC_REPLACE_FMUL", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FMUL));
+    add("ARITHMETIC_REPLACE_FDIV", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FDIV));
+    add("ARITHMETIC_REPLACE_FREM", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FREM));
+
+    add("ARITHMETIC_REPLACE_DADD", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DADD));
+    add("ARITHMETIC_REPLACE_DSUB", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DSUB));
+    add("ARITHMETIC_REPLACE_DMUL", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DMUL));
+    add("ARITHMETIC_REPLACE_DDIV", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DDIV));
+    add("ARITHMETIC_REPLACE_DREM", new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DREM));
+
+    addGroup("AOR_I", aorInteger());
+    addGroup("AOR_D", aorDouble());
+    addGroup("AOR_F", aorFloat());
+    addGroup("AOR_L", aorLong());
+
+    add("ARITHMETIC_DELETE_FIRST",
+            ArithmeticOperatorDeletionFirst.DELETE_ARITHMETIC_FIRST_MUTATOR);
 
 
 
@@ -240,6 +275,46 @@ public final class Mutator {
         NegateConditionalsMutator.NEGATE_CONDITIONALS_MUTATOR,
         ConditionalsBoundaryMutator.CONDITIONALS_BOUNDARY_MUTATOR,
         IncrementsMutator.INCREMENTS_MUTATOR), betterReturns());
+  }
+
+  public static Collection<MethodMutatorFactory> ror() {
+    return group(new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.EQ),
+            new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.NE),
+            new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.GE),
+            new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.LE),
+            new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.GT),
+            new RelationalOperatorReplacementMutator(RelationalOperatorReplacementMutator.TYPE.LT));
+  }
+
+  public static Collection<MethodMutatorFactory> aorInteger() {
+    return group(new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IADD),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.ISUB),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IMUL),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IDIV),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.IREM));
+  }
+
+  public static Collection<MethodMutatorFactory> aorDouble() {
+    return group(new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DADD),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DSUB),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DMUL),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DSUB),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.DREM));
+  }
+
+  public static Collection<MethodMutatorFactory> aorFloat() {
+    return group(new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FADD),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FSUB),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FMUL),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FDIV),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.FREM));
+  }
+  public static Collection<MethodMutatorFactory> aorLong() {
+    return group(new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LADD),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LSUB),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LMUL),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LDIV),
+            new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LREM));
   }
   
   

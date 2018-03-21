@@ -14,11 +14,11 @@ public class PartiallyTested {
     int j = 0;
     // mutating the i++ to i-- will cause long, but not actually infinite loop here
     // most of the mutation analysis time is spent running this before deciding to timeout
-    for ( int i = 0; i < end; i++ ) {
+    ///for ( int i = 0; i < end; i++ ) {
       j = j + 2;
       updateState(j);
       performASideEffect(j);
-    }
+    //}
     return j;
   }
   
@@ -34,4 +34,7 @@ public class PartiallyTested {
     return state;
   }
 
+  public int getAddAORCheck () {
+    return 1+1;
+  }
 }
