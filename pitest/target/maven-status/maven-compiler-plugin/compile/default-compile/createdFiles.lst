@@ -19,6 +19,7 @@ org/pitest/functional/prelude/Prelude$8.class
 org/pitest/mutationtest/UnviableClassMutator.class
 org/pitest/util/IsolationUtils.class
 org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorDREM.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticDeleteLastMethodVisitor.class
 org/pitest/mutationtest/engine/gregor/mutators/ArithmeticReplaceMethodVisitorIMUL.class
 org/pitest/junit/JUnitCustomRunnerTestUnitFinder.class
 org/pitest/classinfo/ClassInfo$1.class
@@ -310,6 +311,7 @@ org/pitest/coverage/CoverageReceiver.class
 org/pitest/mutationtest/engine/gregor/mutators/AReturnMethodVisitor$7.class
 org/pitest/mutationtest/engine/gregor/mutators/ArithmeticOperatorReplacement.class
 org/pitest/util/Functions$3.class
+org/pitest/mutationtest/engine/gregor/mutators/ArithmeticOperatorDeletionLast.class
 org/pitest/coverage/execute/JavassistCoverageInterceptor.class
 org/pitest/testapi/execute/FindTestUnits.class
 org/pitest/mutationtest/engine/gregor/ClassContext.class
