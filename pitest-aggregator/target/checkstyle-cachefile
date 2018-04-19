@@ -1,9 +1,0 @@
-#Sat Mar 17 17:06:47 GMT 2018
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/ReportAggregator.java=1521246422000
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/MutationResultDataLoader.java=1521246422000
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/BlockCoverageDataLoader.java=1521246422000
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/ReportAggregationException.java=1521246422000
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/CodeSourceAggregator.java=1521246422000
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/DataLoader.java=1521246422000
-/mnt/c/ant-pitest-example/pitest-aggregator/src/main/java/org/pitest/aggregate/MutatorUtil.java=1521246422000
-configuration*?=B7EC3C4185EA6026290E764FA90260F08E3D7460

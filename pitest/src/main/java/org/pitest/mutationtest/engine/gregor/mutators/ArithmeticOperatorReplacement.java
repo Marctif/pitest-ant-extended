@@ -124,7 +124,7 @@ public class ArithmeticOperatorReplacement implements MethodMutatorFactory {
 
 class ArithmeticReplaceMethodVisitorIADD extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " int replaced +";
+    private static final String                     DESCRIPTION = " int replaced by +";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONSIA   = new HashMap<>();
 
     static {
@@ -148,7 +148,7 @@ class ArithmeticReplaceMethodVisitorIADD extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorISUB extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " int replaced -";
+    private static final String                     DESCRIPTION = " int replaced by -";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -172,7 +172,7 @@ class ArithmeticReplaceMethodVisitorISUB extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorIMUL extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " int replaced *";
+    private static final String                     DESCRIPTION = " int replaced by *";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -196,7 +196,7 @@ class ArithmeticReplaceMethodVisitorIMUL extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorIDIV extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " int replaced /";
+    private static final String                     DESCRIPTION = " int replaced by /";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -220,7 +220,7 @@ class ArithmeticReplaceMethodVisitorIDIV extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorIREM extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " int replaced %";
+    private static final String                     DESCRIPTION = " int replaced by %";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -244,7 +244,7 @@ class ArithmeticReplaceMethodVisitorIREM extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorDADD extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " double replaced +";
+    private static final String                     DESCRIPTION = " double replaced by +";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -268,7 +268,7 @@ class ArithmeticReplaceMethodVisitorDADD extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorDSUB extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " double replaced -";
+    private static final String                     DESCRIPTION = " double replaced by -";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -292,7 +292,7 @@ class ArithmeticReplaceMethodVisitorDSUB extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorDMUL extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " double replaced *";
+    private static final String                     DESCRIPTION = " double replaced by *";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -316,7 +316,7 @@ class ArithmeticReplaceMethodVisitorDMUL extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorDDIV extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " double replaced /";
+    private static final String                     DESCRIPTION = " double replaced by /";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -340,7 +340,7 @@ class ArithmeticReplaceMethodVisitorDDIV extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorDREM extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " double replaced % ";
+    private static final String                     DESCRIPTION = " double replaced by % ";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -364,7 +364,7 @@ class ArithmeticReplaceMethodVisitorDREM extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorFADD extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " float replaced +";
+    private static final String                     DESCRIPTION = " float replaced by +";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -388,7 +388,7 @@ class ArithmeticReplaceMethodVisitorFADD extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorFSUB extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " float replaced -";
+    private static final String                     DESCRIPTION = " float replaced by -";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -412,7 +412,7 @@ class ArithmeticReplaceMethodVisitorFSUB extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorFMUL extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " float replaced *";
+    private static final String                     DESCRIPTION = " float replaced by *";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -436,7 +436,7 @@ class ArithmeticReplaceMethodVisitorFMUL extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorFDIV extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " float replaced /";
+    private static final String                     DESCRIPTION = " float replaced by /";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -460,7 +460,7 @@ class ArithmeticReplaceMethodVisitorFDIV extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorFREM extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " float replaced %";
+    private static final String                     DESCRIPTION = " float replaced by %";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -484,7 +484,7 @@ class ArithmeticReplaceMethodVisitorFREM extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorLADD extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " long replaced +";
+    private static final String                     DESCRIPTION = " long replaced by +";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -508,7 +508,7 @@ class ArithmeticReplaceMethodVisitorLADD extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorLSUB extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " long replaced - ";
+    private static final String                     DESCRIPTION = " long replaced by - ";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -532,7 +532,7 @@ class ArithmeticReplaceMethodVisitorLSUB extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorLMUL extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " long replaced *";
+    private static final String                     DESCRIPTION = " long replaced by *";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -556,7 +556,7 @@ class ArithmeticReplaceMethodVisitorLMUL extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorLDIV extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " long replaced / ";
+    private static final String                     DESCRIPTION = " long replaced by / ";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {
@@ -580,7 +580,7 @@ class ArithmeticReplaceMethodVisitorLDIV extends AbstractInsnMutator {
 
 class ArithmeticReplaceMethodVisitorLREM extends AbstractInsnMutator {
 
-    private static final String                     DESCRIPTION = " long replaced %";
+    private static final String                     DESCRIPTION = " long replaced by %";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
 
     static {

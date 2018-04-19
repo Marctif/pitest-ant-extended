@@ -1,6 +1,0 @@
-/mnt/c/ant-pitest-example/pitest-aggregator/src/test/java/org/pitest/aggregate/TestInvocationHelper.java
-/mnt/c/ant-pitest-example/pitest-aggregator/src/test/java/org/pitest/aggregate/BlockCoverageDataLoaderTest.java
-/mnt/c/ant-pitest-example/pitest-aggregator/src/test/java/org/pitest/aggregate/DataLoaderTest.java
-/mnt/c/ant-pitest-example/pitest-aggregator/src/test/java/org/pitest/aggregate/CodeSourceAggregatorTest.java
-/mnt/c/ant-pitest-example/pitest-aggregator/src/test/java/org/pitest/aggregate/MutationResultDataLoaderTest.java
-/mnt/c/ant-pitest-example/pitest-aggregator/src/test/java/org/pitest/aggregate/ReportAggregatorBuilderTest.java

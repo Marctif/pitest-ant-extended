@@ -308,7 +308,7 @@ public class CoverageData implements CoverageDatabase {
     Set<TestInfo> tis = linesToTests.get(cl);
     if (tis == null) {
       tis = new TreeSet<>(new TestInfoNameComparator());
-      tis.addAll(each.getValue());
+//      tis.addAll(each.getValue());
       linesToTests.put(new ClassLine(clazz, line), tis);
     }
     return tis;

@@ -1,8 +1,0 @@
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/MutationHtmlReportListenerTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/ResultComparatorTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/ConfidenceMapTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/PackageSummaryDataTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/MutationTestSummaryDataTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/MutationTestSummaryDataFileNameComparatorTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/InputStreamLineIterableTest.java
-/mnt/c/ant-pitest-example/pitest-html-report/src/test/java/org/pitest/mutationtest/report/html/MutationTotalsTest.java

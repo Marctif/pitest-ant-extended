@@ -17,7 +17,17 @@ public class PartiallyTested {
     ///for ( int i = 0; i < end; i++ ) {
       j = j + 2;
       updateState(j);
-      performASideEffect(j);
+      NoTestCoverage c = new NoTestCoverage();
+    j++;
+    j++;
+    if(c != null  )
+      c.returnOne();
+    j--;
+    j--;
+    performASideEffect(c.returnOne());
+    //p.performASideEffect(j);
+      j++;
+      j--;
     //}
     return j;
   }

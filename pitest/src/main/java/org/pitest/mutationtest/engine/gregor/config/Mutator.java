@@ -41,6 +41,11 @@ import org.pitest.mutationtest.engine.gregor.mutators.experimental.SwitchMutator
 import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorDeletionLast;
 import org.pitest.mutationtest.engine.gregor.mutators.ArithmeticOperatorDeletionFirst;
 
+import org.pitest.mutationtest.engine.gregor.mutators.AbsoluteValueMutator;
+import org.pitest.mutationtest.engine.gregor.mutators.IncrementMutator;
+import org.pitest.mutationtest.engine.gregor.mutators.ConstantMutator;
+import org.pitest.mutationtest.engine.gregor.mutators.m1;
+
 public final class Mutator {
 
   private static final Map<String, Iterable<MethodMutatorFactory>> MUTATORS = new LinkedHashMap<>();
@@ -163,8 +168,23 @@ public final class Mutator {
     add("ARITHMETIC_DELETE_FIRST",
             ArithmeticOperatorDeletionFirst.DELETE_ARITHMETIC_FIRST_MUTATOR);
 
+    add("ABSOLUTE",
+            AbsoluteValueMutator.ABSOLUTE_VALUE_MUTATOR);
 
 
+    add("INC_ADD", new IncrementMutator(IncrementMutator.MutantType.INCREMENT));
+    add("INC_SUB", new IncrementMutator(IncrementMutator.MutantType.DECREMENT));
+    add("INC_RMV", new IncrementMutator(IncrementMutator.MutantType.REMOVE));
+    add("INC_RVS", new IncrementMutator(IncrementMutator.MutantType.REVERSE));
+
+    add("M1", m1.M1);
+
+
+    add("CRCR_NEGATE", new ConstantMutator(ConstantMutator.MutantType.NEGATE));
+    add("CRCR_REPLACE_ONE", new ConstantMutator(ConstantMutator.MutantType.REPLACE_ONE));
+    add("CRCR_REPLACE_ZERO", new ConstantMutator(ConstantMutator.MutantType.REPLACE_ZERO));
+    add("CRCR_ADD_ONE", new ConstantMutator(ConstantMutator.MutantType.ADD));
+    add("CRCR_SUB_ONE", new ConstantMutator(ConstantMutator.MutantType.SUB));
 
     /**
      * Removes conditional statements so that guarded statements always execute
@@ -218,6 +238,8 @@ public final class Mutator {
     addGroup("STRONGER", stronger());
     addGroup("ALL", all());
     addGroup("NEW_DEFAULTS", newDefaults());
+
+    addGroup("CRCR", crcr());
   }
 
   public static Collection<MethodMutatorFactory> all() {
@@ -301,6 +323,14 @@ public final class Mutator {
             new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LMUL),
             new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LDIV),
             new ArithmeticOperatorReplacement(ArithmeticOperatorReplacement.TYPE.LREM));
+  }
+
+  public static Collection<MethodMutatorFactory> crcr() {
+    return group(new ConstantMutator(ConstantMutator.MutantType.NEGATE),
+            new ConstantMutator(ConstantMutator.MutantType.REPLACE_ONE),
+            new ConstantMutator(ConstantMutator.MutantType.REPLACE_ZERO),
+            new ConstantMutator(ConstantMutator.MutantType.ADD),
+            new ConstantMutator(ConstantMutator.MutantType.SUB));
   }
   
   public static Collection<MethodMutatorFactory> betterReturns() {
