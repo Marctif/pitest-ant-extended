@@ -45,6 +45,7 @@ import org.pitest.mutationtest.engine.gregor.mutators.AbsoluteValueMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.IncrementMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.ConstantMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.m1;
+import org.pitest.mutationtest.engine.gregor.mutators.m1field;
 
 public final class Mutator {
 
@@ -178,10 +179,10 @@ public final class Mutator {
     add("INC_RVS", new IncrementMutator(IncrementMutator.MutantType.REVERSE));
 
     add("M1", m1.M1);
+    add("M1FIELD", m1field.M1);
 
 
     add("CRCR_NEGATE", new ConstantMutator(ConstantMutator.MutantType.NEGATE));
-    add("CRCR_REPLACE_ONE", new ConstantMutator(ConstantMutator.MutantType.REPLACE_ONE));
     add("CRCR_REPLACE_ZERO", new ConstantMutator(ConstantMutator.MutantType.REPLACE_ZERO));
     add("CRCR_ADD_ONE", new ConstantMutator(ConstantMutator.MutantType.ADD));
     add("CRCR_SUB_ONE", new ConstantMutator(ConstantMutator.MutantType.SUB));
@@ -327,7 +328,6 @@ public final class Mutator {
 
   public static Collection<MethodMutatorFactory> crcr() {
     return group(new ConstantMutator(ConstantMutator.MutantType.NEGATE),
-            new ConstantMutator(ConstantMutator.MutantType.REPLACE_ONE),
             new ConstantMutator(ConstantMutator.MutantType.REPLACE_ZERO),
             new ConstantMutator(ConstantMutator.MutantType.ADD),
             new ConstantMutator(ConstantMutator.MutantType.SUB));

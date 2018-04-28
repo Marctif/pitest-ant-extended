@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
@@ -56,10 +57,12 @@ public enum m1 implements MethodMutatorFactory {
 
 class m1Visitor extends MethodVisitor {
 
-    private static final String                     DESCRIPTION = "Null check for field derefernce (m1)";
+    private static final String                     DESCRIPTION = "Null check for field derefernce (m1 method)";
+    private static final String                     DESCRIPTION2 = "Null check for field derefernce (m1 field)";
     private static final Map<Integer, ZeroOperandMutation> MUTATIONS   = new HashMap<>();
     private final MethodMutatorFactory factory;
     private final MutationContext context;
+    private Label lab;
 
     m1Visitor(final MethodMutatorFactory factory, final MutationContext context, final MethodVisitor methodVisitor) {
         super(Opcodes.ASM6, methodVisitor);
@@ -69,6 +72,12 @@ class m1Visitor extends MethodVisitor {
     }
 
    // visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf)
+
+
+    @Override
+    public void visitLabel(final Label arg0) {
+        lab = arg0;
+    }
 
     @Override
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
@@ -106,6 +115,7 @@ class m1Visitor extends MethodVisitor {
 //
 //        }
     }
+
 
     private void replaceMethodCallWithArgumentHavingSameTypeAsReturnValue(
             final Type[] argTypes, final Type returnType, final int opcode) {

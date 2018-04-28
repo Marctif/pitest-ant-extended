@@ -25,8 +25,14 @@ public class PartiallyTested {
     j--;
     j--;
     performASideEffect(c.returnOne());
+
+    NoTestCoverage cn = new NoTestCoverage();
+    cn.num = c.num;
+    cn.num = null;
+       if(cn.num == null)
+      return 2;
     //p.performASideEffect(j);
-      j++;
+     j = j ;
       j--;
     //}
     return j;

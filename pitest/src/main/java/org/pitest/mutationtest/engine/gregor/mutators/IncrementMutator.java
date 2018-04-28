@@ -24,13 +24,13 @@ public class IncrementMutator implements MethodMutatorFactory {
     public MethodVisitor create(final MutationContext context,
                                 final MethodInfo methodInfo, final MethodVisitor methodVisitor) {
         if (this.mutatorType == IncrementMutator.MutantType.INCREMENT) {
-            return new UOIAddIncrementMutatorMethodVisitor(this, context, methodVisitor);
+            return new AddIncrementMutatorMethodVisitor(this, context, methodVisitor);
         } else if (this.mutatorType == IncrementMutator.MutantType.DECREMENT) {
-            return new UOIAddDecrementMutatorMethodVisitor(this, context, methodVisitor);
+            return new AddDecrementMutatorMethodVisitor(this, context, methodVisitor);
         } else if (this.mutatorType == IncrementMutator.MutantType.REVERSE) {
-            return new UOIReverseMutatorMethodVisitor(this, context, methodVisitor);
+            return new ReverseMutatorMethodVisitor(this, context, methodVisitor);
         } else if (this.mutatorType == IncrementMutator.MutantType.REMOVE) {
-            return new UOIRemoveMutatorMethodVisitor(this, context, methodVisitor);
+            return new RemoveMutatorMethodVisitor(this, context, methodVisitor);
         } else {
             return null;
         }
@@ -48,12 +48,12 @@ public class IncrementMutator implements MethodMutatorFactory {
 }
 
 // This operator works exclusively on function local variables, not object variables
-class UOIAddIncrementMutatorMethodVisitor extends MethodVisitor {
+class AddIncrementMutatorMethodVisitor extends MethodVisitor {
 
     private final MethodMutatorFactory factory;
     private final MutationContext context;
 
-    UOIAddIncrementMutatorMethodVisitor(final MethodMutatorFactory factory,
+    AddIncrementMutatorMethodVisitor(final MethodMutatorFactory factory,
                                         final MutationContext context, final MethodVisitor delegateMethodVisitor) {
         super(Opcodes.ASM6, delegateMethodVisitor);
         this.factory = factory;
@@ -63,7 +63,7 @@ class UOIAddIncrementMutatorMethodVisitor extends MethodVisitor {
     @Override
     public void visitIincInsn(final int var, final int increment) {
 
-        final MutationIdentifier newId = this.context.registerMutation(this.factory, "UOI Mutator: Added unary increment "
+        final MutationIdentifier newId = this.context.registerMutation(this.factory, " Added unary increment "
                 + increment + " -> " + (increment + 1) + " to local variable");
 
         if (this.context.shouldMutate(newId)) {
@@ -76,12 +76,12 @@ class UOIAddIncrementMutatorMethodVisitor extends MethodVisitor {
 }
 
 // This operator works exclusively on function local variables, not object variables
-class UOIAddDecrementMutatorMethodVisitor extends MethodVisitor {
+class AddDecrementMutatorMethodVisitor extends MethodVisitor {
 
     private final MethodMutatorFactory factory;
     private final MutationContext context;
 
-    UOIAddDecrementMutatorMethodVisitor(final MethodMutatorFactory factory,
+    AddDecrementMutatorMethodVisitor(final MethodMutatorFactory factory,
                                         final MutationContext context, final MethodVisitor delegateMethodVisitor) {
         super(Opcodes.ASM6, delegateMethodVisitor);
         this.factory = factory;
@@ -91,7 +91,7 @@ class UOIAddDecrementMutatorMethodVisitor extends MethodVisitor {
     @Override
     public void visitIincInsn(final int var, final int increment) {
 
-        final MutationIdentifier newId = this.context.registerMutation(this.factory, "UOI Mutator: Added unary decrement "
+        final MutationIdentifier newId = this.context.registerMutation(this.factory, " Added unary decrement "
                 + increment + " -> " + (increment - 1) + " to local variable");
 
         if (this.context.shouldMutate(newId)) {
@@ -104,12 +104,12 @@ class UOIAddDecrementMutatorMethodVisitor extends MethodVisitor {
 }
 
 // This operator works exclusively on function local variables, not object variables
-class UOIRemoveMutatorMethodVisitor extends MethodVisitor {
+class RemoveMutatorMethodVisitor extends MethodVisitor {
 
     private final MethodMutatorFactory factory;
     private final MutationContext context;
 
-    UOIRemoveMutatorMethodVisitor(final MethodMutatorFactory factory,
+    RemoveMutatorMethodVisitor(final MethodMutatorFactory factory,
                                   final MutationContext context, final MethodVisitor delegateMethodVisitor) {
         super(Opcodes.ASM6, delegateMethodVisitor);
         this.factory = factory;
@@ -119,7 +119,7 @@ class UOIRemoveMutatorMethodVisitor extends MethodVisitor {
     @Override
     public void visitIincInsn(final int var, final int increment) {
         final MutationIdentifier newId = this.context.registerMutation(this.factory,
-                "UOI Mutator: Removed unary increment of local variable");
+                " Removed unary increment of local variable");
 
         if (this.context.shouldMutate(newId)) {
             super.mv.visitIincInsn(var, 0);
@@ -131,12 +131,12 @@ class UOIRemoveMutatorMethodVisitor extends MethodVisitor {
 }
 
 // This operator works exclusively on function local variables, not object variables
-class UOIReverseMutatorMethodVisitor extends MethodVisitor {
+class ReverseMutatorMethodVisitor extends MethodVisitor {
 
     private final MethodMutatorFactory factory;
     private final MutationContext context;
 
-    UOIReverseMutatorMethodVisitor(final MethodMutatorFactory factory,
+    ReverseMutatorMethodVisitor(final MethodMutatorFactory factory,
                                    final MutationContext context, final MethodVisitor delegateMethodVisitor) {
         super(Opcodes.ASM6, delegateMethodVisitor);
         this.factory = factory;
@@ -146,7 +146,7 @@ class UOIReverseMutatorMethodVisitor extends MethodVisitor {
     @Override
     public void visitIincInsn(final int var, final int increment) {
         final MutationIdentifier newId = this.context.registerMutation(this.factory,
-                "UOI Mutator: Reversed increment of local variable");
+                " Reversed increment of local variable");
 
         if (this.context.shouldMutate(newId)) {
             this.mv.visitIincInsn(var, -increment);

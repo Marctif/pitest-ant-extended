@@ -61,23 +61,6 @@ class AbsoluteValueMethodVisitor extends MethodVisitor {
         this.info = info;
 
     }
-//
-//    @Override
-//    public void visitInsn(int opcode) {
-//
-//        if ((opcode == Opcodes.FREM)) {
-//            final MutationIdentifier muID = this.context.registerMutation(factory, DESCRIPTION);
-//            if(this.context.shouldMutate(muID)) {
-//                super.visitInsn(Opcodes.SWAP);
-//                super.visitInsn(Opcodes.POP);
-//            } else {
-//                super.visitInsn(opcode);
-//            }
-//        }  else {
-//            super.visitInsn(opcode);
-//        }a
-//
-//    }
 
     @Override
     public void visitVarInsn(int opcode, int var) {
