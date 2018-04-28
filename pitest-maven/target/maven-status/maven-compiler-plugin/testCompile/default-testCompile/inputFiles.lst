@@ -1,0 +1,17 @@
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/report/generator/XMLReportGeneratorTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/SurefireConfigConverterTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/RunDecisionTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/DependencyFilterIT.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/report/ReportSourceLocatorParamaterizedTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/MojoToReportOptionsConverterTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/report/ReportSourceLocatorTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/ScmStatusTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/PitMojoTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/report/PitReportMojoTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/ScmMojoTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/SystemTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/BasePitMojoTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/report/generator/HTMLReportGeneratorTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/NonEmptyProjectCheckIT.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/report/generator/ReportGenerationManagerTest.java
+/Users/DebaImade/Documents/Repos/pitest-ant-extended/pitest-maven/src/test/java/org/pitest/maven/PathToJavaClassConverterTest.java

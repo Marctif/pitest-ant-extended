@@ -46,6 +46,7 @@ import org.pitest.mutationtest.engine.gregor.mutators.IncrementMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.ConstantMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.m1;
 import org.pitest.mutationtest.engine.gregor.mutators.m1field;
+import org.pitest.mutationtest.engine.gregor.mutators.m4;
 
 public final class Mutator {
 
@@ -180,6 +181,8 @@ public final class Mutator {
 
     add("M1", m1.M1);
     add("M1FIELD", m1field.M1);
+
+    add("M4", m4.M4);
 
 
     add("CRCR_NEGATE", new ConstantMutator(ConstantMutator.MutantType.NEGATE));
