@@ -102,7 +102,7 @@ class MutatorAddOneMethodVisitor extends MethodVisitor {
         super.visitInsn(opcode);
 
         if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1) || (opcode == Opcodes.LCONST_0) || (opcode == Opcodes.LCONST_1) || (opcode == Opcodes.FCONST_0) || (opcode == Opcodes.FCONST_1) || (opcode == Opcodes.FCONST_2) || (opcode == Opcodes.DCONST_0) || (opcode == Opcodes.DCONST_1)) {
-            final MutationIdentifier muID = this.context.registerMutation(factory, "  Incremented value of common constant  ");
+            final MutationIdentifier muID = this.context.registerMutation(factory, "  Incremented value of constant  ");
 
             if (this.context.shouldMutate(muID)) {
                 if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1)) {
@@ -181,7 +181,7 @@ class MutatorSubOneMethodVisitor extends MethodVisitor {
         super.visitInsn(opcode);
 
         if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1) || (opcode == Opcodes.LCONST_0) || (opcode == Opcodes.LCONST_1) || (opcode == Opcodes.FCONST_0) || (opcode == Opcodes.FCONST_1) || (opcode == Opcodes.FCONST_2) || (opcode == Opcodes.DCONST_0) || (opcode == Opcodes.DCONST_1)) {
-            final MutationIdentifier muID = this.context.registerMutation(factory, "  Decremented value of common constant  ");
+            final MutationIdentifier muID = this.context.registerMutation(factory, "  Decremented value of constant  ");
 
             if (this.context.shouldMutate(muID)) {
                 if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1)) {
@@ -259,7 +259,7 @@ class  MutatorNegateMethodVisitor extends MethodVisitor {
         super.visitInsn(opcode);
         if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1) || (opcode == Opcodes.LCONST_0) || (opcode == Opcodes.LCONST_1) || (opcode == Opcodes.FCONST_0) || (opcode == Opcodes.FCONST_1) || (opcode == Opcodes.FCONST_2) || (opcode == Opcodes.DCONST_0) || (opcode == Opcodes.DCONST_1)) {
 
-            final MutationIdentifier muID = this.context.registerMutation(factory, "  Negated value of common constant  ");
+            final MutationIdentifier muID = this.context.registerMutation(factory, "  Negated value of constant  ");
 
             if (this.context.shouldMutate(muID)) {
                 if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1)) {
@@ -331,7 +331,7 @@ class  MutatorReplaceOneMethodVisitor extends MethodVisitor {
     @Override
     public void visitInsn(int opcode) {
         if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1) || (opcode == Opcodes.LCONST_0) || (opcode == Opcodes.FCONST_0) || (opcode == Opcodes.FCONST_2) || (opcode == Opcodes.DCONST_0)) {
-            final MutationIdentifier muID = this.context.registerMutation(factory, "  Replaced value of common constant with 1  ");
+            final MutationIdentifier muID = this.context.registerMutation(factory, "  Replaced value of constant with 1  ");
 
             if (this.context.shouldMutate(muID)) {
                 if ((opcode == Opcodes.ICONST_0) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1)) {
@@ -407,7 +407,7 @@ class  MutatorReplaceZeroMethodVisitor extends MethodVisitor {
     @Override
     public void visitInsn(int opcode) {
         if ((opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1) || (opcode == Opcodes.LCONST_1) || (opcode == Opcodes.FCONST_1) || (opcode == Opcodes.FCONST_2) || (opcode == Opcodes.DCONST_1)) {
-            final MutationIdentifier muID = this.context.registerMutation(factory, "  Replaced value of common constant with 0  ");
+            final MutationIdentifier muID = this.context.registerMutation(factory, "  Replaced value of constant with 0  ");
 
             if (this.context.shouldMutate(muID)) {
                 if ((opcode == Opcodes.ICONST_1) || (opcode == Opcodes.ICONST_2) || (opcode == Opcodes.ICONST_3) || (opcode == Opcodes.ICONST_4) || (opcode == Opcodes.ICONST_5) || (opcode == Opcodes.ICONST_M1)) {

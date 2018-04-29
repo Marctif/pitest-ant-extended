@@ -51,7 +51,7 @@ class m4MethodVisitor extends MethodVisitor{
         if (opcode == Opcodes.ISTORE || opcode == Opcodes.FSTORE ||
                 opcode == Opcodes.DSTORE || opcode == Opcodes.LSTORE || opcode == Opcodes.ASTORE){
             variableIndex.add(variable);
-            if (!(variableIndex.contains(variable))){
+           // if (!(variableIndex.contains(variable))){
                 if (opcode == Opcodes.ASTORE)
                     variableType.add("Object");
                 else if(opcode == Opcodes.ISTORE)
@@ -62,20 +62,24 @@ class m4MethodVisitor extends MethodVisitor{
                     variableType.add("Double");
                 else if(opcode == Opcodes.FSTORE)
                     variableType.add("Float");
-            }
-            else {
-                variableIndex.set(variableIndex.indexOf(variable), variable);
+           // }
+           // else {
+//                if(variableType.isEmpty()){
+//                    variableType.add("Object");
+//                }
+
+               // variableType.(variableIndex.indexOf(variable), variable);
                 if (opcode == Opcodes.ASTORE)
-                    variableType.set(variableIndex.indexOf(variable), "Object");
+                    variableType.add(variableIndex.indexOf(variable), "Object");
                 else if(opcode == Opcodes.ISTORE)
-                    variableType.set(variableIndex.indexOf(variable), "Integer");
+                    variableType.add(variableIndex.indexOf(variable), "Integer");
                 else if(opcode == Opcodes.LSTORE)
-                    variableType.set(variableIndex.indexOf(variable), "Long");
+                    variableType.add(variableIndex.indexOf(variable), "Long");
                 else if(opcode == Opcodes.DSTORE)
-                    variableType.set(variableIndex.indexOf(variable), "Double");
+                    variableType.add(variableIndex.indexOf(variable), "Double");
                 else if(opcode == Opcodes.FSTORE)
-                    variableType.set(variableIndex.indexOf(variable), "Float");
-            }
+                    variableType.add(variableIndex.indexOf(variable), "Float");
+         //   }
             super.visitVarInsn(opcode, variable);
         }
 
@@ -100,7 +104,7 @@ class m4MethodVisitor extends MethodVisitor{
                     } while (i == index && !(variableType.get(i).equals(variableType.get(index))));
                 }
                 final MutationIdentifier newIdentifier = this.context.registerMutation(this.methodMutatorFactory,
-                        "Replaced " + variableType.get(index) + " with " + variableType.get(i));
+                        "Replaced " + variableType.get(index) + " with " + variableType.get(i) + " M4");
                 if (this.context.shouldMutate(newIdentifier)) {
                     super.visitVarInsn(opcode, variableIndex.get(i));
                 }
